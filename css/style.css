@@ -96,7 +96,7 @@ body {
   transition: all .2s; }
   /* line 49, sass/base/_typography.scss */
   .heading-secondary:hover {
-    transform: skewY(2deg) skewX(20deg) scale(1.1);
+    transform: translateY(-1rem) skewX(5deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 /* line 56, sass/base/_typography.scss */
