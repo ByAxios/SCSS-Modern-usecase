@@ -83,7 +83,58 @@ body {
     animation-duration: 0.8s;
     animation-timing-function: ease-in; }
 
-/* line 2, sass/components/_button.scss */
+/* line 37, sass/base/_typography.scss */
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  /* line 49, sass/base/_typography.scss */
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(20deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+/* line 56, sass/base/_typography.scss */
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 63, sass/base/_typography.scss */
+.paragraph {
+  font-size: 1.6rem; }
+  /* line 65, sass/base/_typography.scss */
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+/* line 1, sass/base/_utilities.scss */
+.u-center-text {
+  text-align: center; }
+
+/* line 5, sass/base/_utilities.scss */
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+/* line 8, sass/base/_utilities.scss */
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+/* line 11, sass/base/_utilities.scss */
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+/* line 1, sass/pages/_home.scss */
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
+/* line 1, sass/components/_button.scss */
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -94,21 +145,21 @@ body {
   position: relative;
   font-size: 1.6rem; }
 
-/* line 20, sass/components/_button.scss */
+/* line 19, sass/components/_button.scss */
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  /* line 23, sass/components/_button.scss */
+  /* line 22, sass/components/_button.scss */
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-/* line 28, sass/components/_button.scss */
+/* line 27, sass/components/_button.scss */
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-/* line 32, sass/components/_button.scss */
+/* line 31, sass/components/_button.scss */
 .btn::after {
   content: "";
   display: inline-block;
@@ -121,19 +172,73 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-/* line 44, sass/components/_button.scss */
+/* line 43, sass/components/_button.scss */
 .btn--white {
   background-color: #fff;
   font-weight: 400;
   color: #777; }
-  /* line 48, sass/components/_button.scss */
+  /* line 47, sass/components/_button.scss */
   .btn--white::after {
     background-color: #fff; }
 
-/* line 53, sass/components/_button.scss */
+/* line 52, sass/components/_button.scss */
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
+
+/* line 59, sass/components/_button.scss */
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #7ed56f;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid #7ed56f;
+  padding: 5px;
+  transition: all .2s; }
+
+/* line 70, sass/components/_button.scss */
+.btn-text:hover {
+  background-color: #7ed56f;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+/* line 76, sass/components/_button.scss */
+.btn-text:active {
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15); }
+
+/* line 1, sass/components/composition.scss */
+.composition {
+  position: relative; }
+  /* line 3, sass/components/composition.scss */
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem; }
+    /* line 12, sass/components/composition.scss */
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    /* line 16, sass/components/composition.scss */
+    .composition__photo--p2 {
+      left: 15%;
+      top: 2rem; }
+    /* line 20, sass/components/composition.scss */
+    .composition__photo--p3 {
+      left: 30%;
+      top: 6rem; }
+    /* line 24, sass/components/composition.scss */
+    .composition__photo:hover {
+      outline: 1.5rem solid #28b485;
+      transform: scale(1.05) translateY(-0.9rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  /* line 31, sass/components/composition.scss */
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 /* line 2, sass/layout/_header.scss */
 .header {
@@ -165,9 +270,8 @@ body {
 /* line 1, sass/layout/_grid.scss */
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
-  /* line 6, sass/layout/_grid.scss */
+  /* line 5, sass/layout/_grid.scss */
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   /* line 2, sass/abstracts/_mixins.scss */
@@ -175,31 +279,30 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 18, sass/layout/_grid.scss */
+  /* line 17, sass/layout/_grid.scss */
   .row [class^="col-"] {
-    background-color: orange;
     float: left; }
-    /* line 21, sass/layout/_grid.scss */
+    /* line 19, sass/layout/_grid.scss */
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-  /* line 26, sass/layout/_grid.scss */
+  /* line 24, sass/layout/_grid.scss */
   .row .col-1-of-1 {
     width: 100%; }
-  /* line 30, sass/layout/_grid.scss */
+  /* line 28, sass/layout/_grid.scss */
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
-  /* line 34, sass/layout/_grid.scss */
+  /* line 32, sass/layout/_grid.scss */
   .row .col-1-of-3 {
     width: calc((100% - (2 * 6rem)) / 3); }
-  /* line 38, sass/layout/_grid.scss */
+  /* line 36, sass/layout/_grid.scss */
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-  /* line 42, sass/layout/_grid.scss */
+  /* line 40, sass/layout/_grid.scss */
   .row .col-1-of-4 {
     width: calc((100% - (3 * 6rem)) / 4); }
-  /* line 46, sass/layout/_grid.scss */
+  /* line 44, sass/layout/_grid.scss */
   .row .col-2-of-4 {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
-  /* line 50, sass/layout/_grid.scss */
+  /* line 48, sass/layout/_grid.scss */
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }

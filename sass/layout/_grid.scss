@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: $color-ligth-gray;
     margin: 0 auto;
 
     &:not(:last-child) {
@@ -14,9 +13,8 @@
     //? Finding ENDS width "col-" class
     //* [class$="col-"]
     //? Finding STARTS width "col-" class
-
+    
     [class^="col-"] {
-        background-color: orange;
         float: left;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
