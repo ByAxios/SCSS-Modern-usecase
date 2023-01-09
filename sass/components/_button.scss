@@ -49,6 +49,15 @@
         }
     }
 
+    &--primary {
+        background-color: $color-primary-dark;
+        font-weight: 400;
+        color: $color-white;
+        &::after {
+            background-color: $color-primary-dark;
+        }
+    }
+
     &--animated {
         animation: moveInBottom 0.5s ease-out 0.75s;
         animation-fill-mode: backwards;
