@@ -116,15 +116,19 @@ body {
 .u-center-text {
   text-align: center; }
 
-/* line 5, sass/base/_utilities.scss */
+/* line 4, sass/base/_utilities.scss */
+.u-margin-bottom-xsmall {
+  margin-bottom: 1rem; }
+
+/* line 8, sass/base/_utilities.scss */
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
-/* line 8, sass/base/_utilities.scss */
+/* line 11, sass/base/_utilities.scss */
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
 
-/* line 11, sass/base/_utilities.scss */
+/* line 14, sass/base/_utilities.scss */
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
@@ -133,6 +137,17 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+/* line 7, sass/pages/_home.scss */
+.section-features {
+  padding: 20rem 0;
+  margin-top: -15rem;
+  transform: skewY(-7deg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-size: cover; }
+  /* line 12, sass/pages/_home.scss */
+  .section-features > * {
+    transform: skewY(7deg); }
 
 /* line 1, sass/components/_button.scss */
 .btn:link, .btn:visited {
@@ -189,16 +204,16 @@ body {
 /* line 59, sass/components/_button.scss */
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #7ed56f;
+  color: #28b485;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 2px solid #7ed56f;
+  border-bottom: 2px solid #28b485;
   padding: 5px;
   transition: all .2s; }
 
 /* line 70, sass/components/_button.scss */
 .btn-text:hover {
-  background-color: #7ed56f;
+  background-color: #28b485;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -207,10 +222,10 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15); }
 
-/* line 1, sass/components/composition.scss */
+/* line 1, sass/components/_composition.scss */
 .composition {
   position: relative; }
-  /* line 3, sass/components/composition.scss */
+  /* line 3, sass/components/_composition.scss */
   .composition__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -218,27 +233,48 @@ body {
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 2rem; }
-    /* line 12, sass/components/composition.scss */
+    /* line 12, sass/components/_composition.scss */
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
-    /* line 16, sass/components/composition.scss */
+    /* line 16, sass/components/_composition.scss */
     .composition__photo--p2 {
       left: 15%;
       top: 2rem; }
-    /* line 20, sass/components/composition.scss */
+    /* line 20, sass/components/_composition.scss */
     .composition__photo--p3 {
       left: 30%;
       top: 6rem; }
-    /* line 24, sass/components/composition.scss */
+    /* line 24, sass/components/_composition.scss */
     .composition__photo:hover {
       outline: 1.5rem solid #28b485;
       transform: scale(1.05) translateY(-0.9rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
-  /* line 31, sass/components/composition.scss */
+  /* line 31, sass/components/_composition.scss */
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+/* line 1, sass/components/_feature-box.scss */
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  /* line 10, sass/components/_feature-box.scss */
+  .feature-box__icon {
+    display: inline-block;
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right, #55c57a, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+  /* line 21, sass/components/_feature-box.scss */
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.05); }
 
 /* line 2, sass/layout/_header.scss */
 .header {
