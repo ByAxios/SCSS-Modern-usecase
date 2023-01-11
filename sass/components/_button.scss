@@ -7,9 +7,13 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+    //change for the button element
+    border: none;
+    cursor: pointer;
 }
 
 .btn {
+    &,
     &:link {
         @extend %btn-pointer;
     }
@@ -24,7 +28,8 @@
             opacity: 0;
         }
     }
-    &:active {
+    &:active,&:focus {
+        outline: none;
         transform: translateY(-0.1rem);
         box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     }
@@ -56,6 +61,10 @@
         &::after {
             background-color: $color-primary-dark;
         }
+    }
+
+    &--full-width{
+        width: 90%;
     }
 
     &--animated {

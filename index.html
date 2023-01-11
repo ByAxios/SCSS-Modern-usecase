@@ -79,7 +79,7 @@
 -->
 
     <main>
-      <div class="section-about">
+      <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting Tours For Adventures People
@@ -128,7 +128,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section class="section-features">
         <div class="row">
@@ -299,6 +299,14 @@
       </section>
 
       <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="./img/video.mp4" type="video/mp-4" />
+            <source src="./img/video.webm" type="video/webm" />
+            Your browser not supported for play video
+          </video>
+        </div>
+
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">We make people genuinely happy</h2>
         </div>
@@ -349,6 +357,113 @@
           <a href="#" class="btn-text"> Discover All Tours </a>
         </div>
       </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Start booking now</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      class="form__radio-input"
+                      type="radio"
+                      id="small"
+                      checked
+                      name="size"
+                    />
+                    <label class="form__radio-label" for="small">
+                      <span class="form__radio-button"></span>
+                      Small Tour
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      class="form__radio-input"
+                      type="radio"
+                      id="Large"
+                      name="size"
+                    />
+                    <label class="form__radio-label" for="Large">
+                      <span class="form__radio-button"></span>
+                      Large Tour
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button
+                    type="submit"
+                    class="btn btn--full-width btn--primary"
+                  >
+                    Next Step &rarr;
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="logo" srcset="img/logo-green-2x.png 1500w,img/logo-green-1x.png 500w, />
+        <div class="row">
+
+          <div class="col-1-of-2">
+            <ul class="footer__navigation">
+              <li class="footer__item">
+                <a href="" class="footer__link">Company</a>
+                <a href="" class="footer__link">Contact us</a>
+                <a href="" class="footer__link">Careers</a>
+                <a href="" class="footer__link">Privacy Policy</a>
+                <a href="" class="footer__link">Terms</a>
+              </li>
+            </ul>
+            >
+          </div>
+
+          <div class="col-1-of-2">
+            <p class="footer__copyright">
+              Built my <a href="#">Batuhan D. 💜</a> Lorem ipsum dolor sit amet
+              <a href="http://github.com/byAxios">Github</a> adipisicing elit.
+              Nulla, laudantium! Copyright &copy; by Batuhan D. from Jonas
+              Schetman's course.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
   </body>
 </html>
